@@ -1,5 +1,5 @@
 {
-	"name": "syscom/laravel-dbmaker",
+	"name": "dbmaker/odbc",
 	"description": "DBMaker integration for Laravel framework ",
 	"keywords": [
 		"laravel",

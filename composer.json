@@ -1,0 +1,41 @@
+{
+	"name": "syscom/laravel-DBMaker",
+	"description": "DBMaker integration for Laravel framework ",
+	"keywords": [
+		"laravel",
+		"DBMaker",
+		"Database",
+		"PDO",
+		"ODBC"
+	    ],
+	"type": "library",
+	"homepage": "https://github.com/e33d/laravel-DBMaker.git",
+	"authors": [
+		{
+			"name": "syscom",
+			"email": "e33d",
+			"homepage": "https://github.com/e33d/laravel-DBMaker.git",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		 "php": ">=7.1.3",
+       	 "illuminate/database": "5.8.*"
+	},
+  	"autoload": { 
+	    "psr-4": {
+		"Dbmaker\\Odbc\\": "vendor/Dbmaker/Odbc/src/"
+	    },
+	    "classmap": [
+	      "vendor/Dbmaker/Odbc/"
+	    ]
+	 } ,
+	"repositories": [
+	    {
+		"url": "https://github.com/e33d/laravel-DBMaker.git",
+		"type": "git"
+	    }
+	]
+
+
+}

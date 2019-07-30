@@ -1,5 +1,5 @@
 {
-	"name": "syscom/laravel-DBMaker",
+	"name": "syscom/laravel-dbmaker",
 	"description": "DBMaker integration for Laravel framework ",
 	"keywords": [
 		"laravel",
@@ -9,12 +9,12 @@
 		"ODBC"
 	    ],
 	"type": "library",
-	"homepage": "https://github.com/e33d/laravel-DBMaker.git",
+	"homepage": "https://github.com/e33d/laravel-dbmaker.git",
 	"authors": [
 		{
 			"name": "syscom",
 			"email": "e33d",
-			"homepage": "https://github.com/e33d/laravel-DBMaker.git",
+			"homepage": "https://github.com/e33d/laravel-dbmaker.git",
 			"role": "Developer"
 		}
 	],
@@ -32,7 +32,7 @@
 	 } ,
 	"repositories": [
 	    {
-		"url": "https://github.com/e33d/laravel-DBMaker.git",
+		"url": "https://github.com/e33d/laravel-dbmaker.git",
 		"type": "git"
 	    }
 	]

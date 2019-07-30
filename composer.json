@@ -24,7 +24,7 @@
 	},
   	"autoload": { 
 	    "psr-4": {
-		"Dbmaker\\Odbc\\": "vendor/Dbmaker/Odbc/src/"
+		"Dbmaker\\Odbc\\": "src/"
 	    },
 	    "classmap": [
 	      "vendor/Dbmaker/Odbc/"

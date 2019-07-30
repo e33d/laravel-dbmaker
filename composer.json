@@ -1,6 +1,7 @@
 {
 	"name": "dbmaker/odbc",
 	"description": "DBMaker integration for Laravel framework ",
+	"license": "MIT",
 	"keywords": [
 		"laravel",
 		"DBMaker",

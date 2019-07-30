@@ -27,7 +27,7 @@
 		"Dbmaker\\Odbc\\": "src/"
 	    },
 	    "classmap": [
-	      "vendor/Dbmaker/Odbc/"
+	      "vendor/dbmaker/odbc/"
 	    ]
 	 } ,
 	"repositories": [

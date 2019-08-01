@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DBMaker\\ODBC\\DBMakerServiceProvider.php"
+                "DBMaker\\ODBC\\DBMakerServiceProvider"
             ]
         }
     }

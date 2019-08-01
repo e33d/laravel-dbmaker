@@ -1,5 +1,5 @@
 {
-	"name": "dbmaker/odbc",
+	"name": "dbmaker/laravel-odbc",
 	"description": "DBMaker integration for Laravel framework ",
 	"keywords": [
 		"laravel",
@@ -10,12 +10,12 @@
 	    ],
 	"type": "library",
     	"license": "MIT",
-	"homepage": "https://github.com/e33d/laravel-dbmaker.git",
+	"homepage": "http://www.dbmaker.com.tw",
 	"authors": [
 		{
 			"name": "syscom",
-			"email": "lovetatung@gmail.com",
-			"homepage": "https://github.com/e33d/laravel-dbmaker.git",
+			"email": "info@syscom.com.tw",
+			"homepage": "http://www.dbmaker.com.tw",
 			"role": "Developer"
 		}
 	],
@@ -25,12 +25,19 @@
 	},
   	"autoload": { 
 	    "psr-4": {
-		"Dbmaker\\Odbc\\": "src/"
+		"DBMaker\\ODBC\\": "src/"
 	    },
 	    "classmap": [
 	      "src/"
 	    ]
-	 } 
+	 } ,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DBMaker\\ODBC\\DBMakerServiceProvider.php"
+            ]
+        }
+    }
 
 
 }

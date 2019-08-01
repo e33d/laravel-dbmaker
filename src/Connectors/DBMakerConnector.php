@@ -6,11 +6,11 @@
  * Time: 15:50
  */
 
-namespace Dbmaker\Odbc\Connectors;
+namespace DBMaker\ODBC\Connectors;
 
 use PDO as PDO;
-use Dbmaker\Odbc\DBMakerPdo;
-use Dbmaker\Odbc\DBMakerODBCPdo;
+use DBMaker\ODBC\DBMakerPdo;
+use DBMaker\ODBC\DBMakerODBCPdo;
 use Illuminate\Database\Connectors\Connector;
 use Illuminate\Database\Connectors\ConnectorInterface;
 

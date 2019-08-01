@@ -6,13 +6,13 @@
  * Time: 15:50
  */
 
-namespace Dbmaker\Odbc\Schema;
+namespace DBMaker\ODBC\Schema;
 
 use Closure;
 use RuntimeException;
 use Illuminate\Database\Schema\Builder;
-use Dbmaker\Odbc\DBMakerConnection as Connection;
-use Dbmaker\Odbc\Schema\DBMakerBlueprint as Blueprint;
+use DBMaker\ODBC\DBMakerConnection as Connection;
+use DBMaker\ODBC\Schema\DBMakerBlueprint as Blueprint;
 
 class DBMakerBuilder extends Builder
 {

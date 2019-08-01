@@ -7,12 +7,12 @@
  */
 
 
-namespace Dbmaker\Odbc;
+namespace DBMaker\ODBC;
 
 
 use PDO;
 use Exception;
-use Dbmaker\Odbc\DBMakerPdoStatement as DBMakerPdoStatement;
+use DBMaker\ODBC\DBMakerPdoStatement as DBMakerPdoStatement;
 
 class DBMakerPdo extends PDO
 {

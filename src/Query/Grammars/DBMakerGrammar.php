@@ -7,7 +7,7 @@
  */
 
 
-namespace Dbmaker\Odbc\Query\Grammars;
+namespace DBMaker\ODBC\Query\Grammars;
 
 use RuntimeException;
 use Illuminate\Support\Arr;

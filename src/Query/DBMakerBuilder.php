@@ -6,7 +6,7 @@
  * Time: 16:30
  */
 
-namespace Dbmaker\Odbc\Query;
+namespace DBMaker\ODBC\Query;
 
 use App\BaseModel;
 
@@ -26,7 +26,7 @@ use Illuminate\Database\Concerns\BuildsQueries;
 use Illuminate\Database\Query\Processors\Processor;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder;
-use Dbmaker\Odbc\Query\Grammars\DBMakerGrammar as DBMakerQueryGrammar;
+use DBMaker\ODBC\Query\Grammars\DBMakerGrammar as DBMakerQueryGrammar;
 
 class DBMakerBuilder extends Builder
 {

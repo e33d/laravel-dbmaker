@@ -7,7 +7,7 @@
  */
 
 
-namespace Dbmaker\Odbc;
+namespace DBMaker\ODBC;
 
 use PDOStatement;
 

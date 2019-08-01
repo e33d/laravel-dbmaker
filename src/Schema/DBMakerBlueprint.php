@@ -6,12 +6,12 @@
  * Time: 15:50
  */
 
-namespace Dbmaker\Odbc\Schema;
+namespace DBMaker\ODBC\Schema;
 
 use Closure;
 use Illuminate\Database\Schema\Blueprint as Blueprint;
 use Illuminate\Database\Schema\Grammars\Grammar as Grammar;
-use Dbmaker\Odbc\Schema\ColumnDefinition;
+use DBMaker\ODBC\Schema\ColumnDefinition;
 
 class DBMakerBlueprint extends Blueprint
 {

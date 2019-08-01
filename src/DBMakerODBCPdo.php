@@ -7,7 +7,7 @@
  */
 //zz
 
-namespace Dbmaker\Odbc;
+namespace DBMaker\ODBC;
 
 use Exception;
 

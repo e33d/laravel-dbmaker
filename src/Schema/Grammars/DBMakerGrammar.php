@@ -6,7 +6,7 @@
  * Time: 15:50
  */
 
-namespace Dbmaker\Odbc\Schema\Grammars;
+namespace DBMaker\ODBC\Schema\Grammars;
 
 use RuntimeException;
 use Illuminate\Support\Fluent;

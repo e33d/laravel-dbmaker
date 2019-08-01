@@ -7,15 +7,15 @@
  */
 
 
-namespace Dbmaker\Odbc;
+namespace DBMaker\ODBC;
 
 use PDO;
 use Illuminate\Database\Connection;
-use Dbmaker\Odbc\Schema\DBMakerBuilder as DBMakerSchemaBuilder;
-use Dbmaker\Odbc\Query\DBMakerBuilder as DBMakerQueryBuilder;
-use Dbmaker\Odbc\Query\Processors\DBMakerProcessor;
-use Dbmaker\Odbc\Query\Grammars\DBMakerGrammar as QueryGrammar;
-use Dbmaker\Odbc\Schema\Grammars\DBMakerGrammar as SchemaGrammar;
+use DBMaker\ODBC\Schema\DBMakerBuilder as DBMakerSchemaBuilder;
+use DBMaker\ODBC\Query\DBMakerBuilder as DBMakerQueryBuilder;
+use DBMaker\ODBC\Query\Processors\DBMakerProcessor;
+use DBMaker\ODBC\Query\Grammars\DBMakerGrammar as QueryGrammar;
+use DBMaker\ODBC\Schema\Grammars\DBMakerGrammar as SchemaGrammar;
 
 
 class DBMakerConnection extends Connection   

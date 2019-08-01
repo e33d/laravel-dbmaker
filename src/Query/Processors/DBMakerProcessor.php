@@ -7,7 +7,7 @@
  */
 
 
-namespace Dbmaker\Odbc\Query\Processors;
+namespace DBMaker\ODBC\Query\Processors;
  
 use Illuminate\Database\Query\Processors\Processor;  
 use Illuminate\Database\Query\Builder;

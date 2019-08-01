@@ -59,15 +59,7 @@
 	    ]
 
 	 } 
-	,
-    "extra": {
-        "laravel": {
-            "providers": [
-                "DBMaker\\ODBC\\DBMakerServiceProvider"
-            ]
-        }
-    }
-
+	
 
 
 

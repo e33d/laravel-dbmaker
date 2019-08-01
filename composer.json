@@ -1,36 +1,71 @@
 {
+
 	"name": "dbmaker/odbc",
+
 	"description": "DBMaker integration for Laravel framework ",
-	"license": "MIT",
+
 	"keywords": [
+
 		"laravel",
+
 		"DBMaker",
+
 		"Database",
+
 		"PDO",
+
 		"ODBC"
+
 	    ],
+
 	"type": "library",
-	"homepage": "https://github.com/e33d/laravel-dbmaker.git",
+
+    	"license": "MIT",
+
+	"homepage": "http://www.dbmaker.com.tw",
+
 	"authors": [
+
 		{
+
 			"name": "syscom",
-			"email": "lovetatung@gmail.com",
-			"homepage": "https://github.com/e33d/laravel-dbmaker.git",
+
+			"email": "info@syscom.com.tw",
+
+			"homepage": "http://www.dbmaker.com.tw",
+
 			"role": "Developer"
+
 		}
+
 	],
+
 	"require": {
+
 		 "php": ">=7.3",
+
        	 "illuminate/database": "5.8.*"
+
 	},
+
   	"autoload": { 
+
 	    "psr-4": {
-		"Dbmaker\\Odbc\\": "src/"
+
+		"DBMaker\\ODBC\\": "src/"
+
 	    },
+
 	    "classmap": [
+
 	      "src/"
+
 	    ]
+
 	 } 
+
+
+
 
 
 }

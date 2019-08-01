@@ -63,7 +63,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DBMaker\\ODBC\\DBMakerServiceProvider"
+                "DBMaker\\ODBC\\TEST\\DBMakerServiceProvider"
             ]
         }
     }

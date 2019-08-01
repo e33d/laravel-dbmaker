@@ -51,7 +51,7 @@
   	"autoload": { 
 
 	    "psr-4": {
-		"DBMaker\\ODBC\\TEST\\": "src/"
+		"DBMaker\\ODBC\\": "src/"
 	    },
 
 	    "classmap": [
@@ -63,7 +63,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DBMaker\\ODBC\\TEST\\DBMakerServiceProvider"
+                "DBMaker\\ODBC\\DBMakerServiceProvider"
             ]
         }
     }

@@ -51,19 +51,22 @@
   	"autoload": { 
 
 	    "psr-4": {
-
 		"DBMaker\\ODBC\\": "src/"
-
 	    },
 
 	    "classmap": [
-
 	      "src/"
-
 	    ]
 
 	 } 
-
+	,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DBMaker\\ODBC\\DBMakerServiceProvider"
+            ]
+        }
+    }
 
 
 

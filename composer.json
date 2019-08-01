@@ -1,6 +1,6 @@
 {
 
-	"name": "dbmaker/odbc",
+	"name": "dbmaker/laravel-odbc",
 
 	"description": "DBMaker integration for Laravel framework ",
 

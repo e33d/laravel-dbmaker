@@ -47,7 +47,7 @@ We suggest using the libary we build
 ```
 
 ```
-#vi app/Console/Commands/MyCommand.php
+# vi app/Console/Commands/MyCommand.php
 ```
 
 find 
@@ -70,7 +70,7 @@ public function handle()
 ```
 
 ```
-#vi app/Console/Kernel.php
+# vi app/Console/Kernel.php
 ```
 
 ```
@@ -82,10 +82,10 @@ protected $commands = [
 
 run
 ```
-php artisan my:command
+# php artisan my:command
 ```
 
 
-Usage
+laravel DB Usage
 
 Consult the <a href="http://laravel.com/docs" rel="nofollow">Laravel framework documentation</a>

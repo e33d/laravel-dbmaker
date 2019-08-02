@@ -13,7 +13,7 @@ It's very simple to configure:
 'dbmaker' => [
     'driver' => 'odbc',
     'dsn' => 'DSN=DBNAME',
-    'database' => 'db1',
+    'database' => 'DBNAME',
     'host' => 'localhost',
     'username' => 'username',
     'password' => 'password',

@@ -52,7 +52,7 @@ class DBMakerConnector extends Connector implements ConnectorInterface
 			return $this->createPdoConnection(
 					 $dsn, $username, $password, $options
 			);
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			return new DBMakerODBCPdo($dsn, $username, $password);
 		}	
 	}
@@ -68,8 +68,6 @@ class DBMakerConnector extends Connector implements ConnectorInterface
 	 */
 	protected function createPdoConnection($dsn, $username, $password, $options)
 	{
-		 
-			$pdodsn = "odbc:".$dsn;
-			return new DBMakerPdo($pdodsn, $username, $password, $options);
+		return new DBMakerPdo($pdodsn, $username, $password, $options);
 	}
 }

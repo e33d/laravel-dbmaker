@@ -31,17 +31,17 @@ class DBMakerConnection extends Connection
 	
 	public function insert($query, $bindings = [])
 	{	
-				$this->beginTransaction();
-				try{
-					$count = count($bindings);
-					for( $i=0 ; $i<$count; $i++){
-						$result = $this->statement($query, $bindings[$i]);
-					}
-					$this->commit();
-				}
-				catch(Exception $e){
-					$this->rollback();
-				}
+		$this->beginTransaction();
+		try{
+			$count = count($bindings);
+			for( $i=0 ; $i<$count; $i++){
+				$result = $this->statement($query, $bindings[$i]);
+			}
+			$this->commit();
+		}
+		catch(Exception $e){
+			$this->rollback();
+		}
 		return $result;
 	}
 	

@@ -26,8 +26,7 @@ class DBMakerODBCPdo
      */
     public function __construct($dsn, $username, $passwd, $options = [])
     {
-    	  echo "DBMakerODBCPdo<br><br>";
-    	  $connect = odbc_connect($dsn, $username, $passwd);
+    	 $connect = odbc_connect($dsn, $username, $passwd);
         $this->setConnection( $connect  );
     }
 

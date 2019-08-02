@@ -25,7 +25,6 @@ class DBMakerODBCPdoStatement extends PDOStatement
      */
     public function __construct($conn, $query)
     {
-    	echo "DBMakerODBCPdoStatement<br>";
         $this->query = preg_replace('/(?<=\s|^):[^\s:]++/um', '?', $query);
         $this->params = $this->getParamsFromQuery($query);
         $this->statement = odbc_prepare($conn, $this->query);
@@ -37,7 +36,7 @@ class DBMakerODBCPdoStatement extends PDOStatement
      * @return array
      */
     protected function getParamsFromQuery($query)
-    {echo $query;
+    {
         $params = [];
         $qryArray = explode(" ", $query);
         $i = 0;

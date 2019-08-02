@@ -29,7 +29,7 @@ class DBMakerPdo extends PDO
 	 */
 	public function __construct($dsn, $username, $passwd, $options = [])
 	{
-		parent :: __construct($dsn, $username, $passwd, $options );
+	   parent :: __construct($dsn, $username, $passwd, $options );
 	   $pdo = new PDO($dsn, $username, $passwd, $options);
 	   $this->setConnection( $pdo );
 	 

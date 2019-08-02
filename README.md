@@ -34,7 +34,7 @@ It's very simple to configure:
 We suggest using the libary we build
 
 1. Download URL  https://github.com/dbmaker-go/php_ext/releases
-2. rename pdo_odbc.ini to 20-pdo_odbc.ini and remove to /etc/php.d/
+2. rename pdo_odbc.ini to 20-pdo_odbc.ini and move to /etc/php.d/
 3. copy pdo_odbc.so to /usr/lib64/php/modules/
 4. ```php -m``` Check if the installation was successful
 5. restart php service

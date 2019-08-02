@@ -68,6 +68,6 @@ class DBMakerConnector extends Connector implements ConnectorInterface
 	 */
 	protected function createPdoConnection($dsn, $username, $password, $options)
 	{
-		return new DBMakerPdo($pdodsn, $username, $password, $options);
+		return new DBMakerPdo($dsn, $username, $password, $options);
 	}
 }

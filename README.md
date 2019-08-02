@@ -12,7 +12,7 @@ It's very simple to configure:
 ```PHP
 'dbmaker' => [
     'driver' => 'odbc',
-    'dsn' => 'DSN=DBNAME',
+    'dsn' => 'odbc:DSN=DBNAME',
     'database' => 'DBNAME',
     'host' => 'localhost',
     'username' => 'username',

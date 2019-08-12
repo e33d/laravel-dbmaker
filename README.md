@@ -33,12 +33,21 @@ It's very simple to configure:
 
 We suggest using the libary we build
 
-1. Download URL  https://github.com/dbmaker-go/php_ext/releases
-2. rename pdo_odbc.ini to 20-pdo_odbc.ini and move to /etc/php.d/
-3. copy pdo_odbc.so to /usr/lib64/php/modules/
+1. Download URL  <a href="https://github.com/dbmaker-go/php_ext/releases/download/1.0.0/php_dbmaker-5.4-7.3-Linux2_x86_64.tgz">https://github.com/dbmaker-go/php_ext/releases/download/1.0.0/php_dbmaker-5.4-7.3-Linux2_x86_64.tgz</a> and unzip
+2. According to your DBMaker Version to choice bundle or standard 
+3. rename pdo_odbc.ini to 20-pdo_odbc.ini and move to /etc/php.d/
+4. copy pdo_odbc.so to /usr/lib64/php/modules/
 4. ```php -m``` Check if the installation was successful
-5. restart php service
 
+
+you can follow this step
+```
+# wget https://github.com/dbmaker-go/php_ext/releases/download/1.0.0/php_dbmaker-5.4-7.3-Linux2_x86_64.tgz
+# tar zxvf php_dbmaker-5.4-7.3-Linux2_x86_64.tgz
+# mv php_dbmaker/bundle/pdo_odbc.ini /etc/php.d/20-pdo-odbc.ini
+# mv php_dbmaker/bundle/pdo_odbc.so /usr/lib64/php/modules/pdo-odbc.so
+# php -m
+```
 
 **4) testing**
 

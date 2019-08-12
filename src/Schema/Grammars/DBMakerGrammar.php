@@ -10,11 +10,9 @@ namespace DBMaker\ODBC\Schema\Grammars;
 
 use RuntimeException;
 use Illuminate\Support\Fluent;
-use Doctrine\DBAL\Schema\TableDiff;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Grammars\Grammar as Grammar;
-use Doctrine\DBAL\Schema\AbstractSchemaManager as SchemaManager;
 use Illuminate\Database\Schema\Blueprint as Blueprint;
 
 class DBMakerGrammar extends Grammar

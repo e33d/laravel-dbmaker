@@ -45,7 +45,6 @@ class DBMakerConnection extends Connection
 		return $result;
 	}
 	
-	
 	/**
 	 * Get a new query builder instance.
 	 *

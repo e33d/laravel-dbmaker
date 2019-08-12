@@ -8,8 +8,6 @@ It emulates PDO class used by Laravel.
 
 ### install php_odbc for dbmaker
 
-Note: The DBMaker Laravel library treats the default installation directory of DBMaker standard version as /home/dbmaker/5.4, bundle version treats as /opt/dbmaker. If the installation directory is not above, please add installation directory to LD_LIBRARY_PATH.
-
 We suggest using the libary we build
 
 1. Download URL  <a href="https://github.com/dbmaker-go/php_ext/releases/download/1.0.0/php_dbmaker-5.4-7.3-Linux2_x86_64.tgz">https://github.com/dbmaker-go/php_ext/releases/download/1.0.0/php_dbmaker-5.4-7.3-Linux2_x86_64.tgz</a> and unzip
@@ -28,6 +26,8 @@ you can follow this step
 # php -m
 ```
 
+
+Note: The DBMaker Laravel library treats the default installation directory of DBMaker standard version as ```/home/dbmaker/5.4```, bundle version treats as ```/opt/dbmaker```. If the installation directory is not above, please add installation directory to LD_LIBRARY_PATH.
 
 
 ### Usage Instructions

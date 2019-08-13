@@ -10,7 +10,6 @@
 namespace DBMaker\ODBC;
 
 use DBMaker\ODBC\Connectors\DBMakerConnector;
-use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 

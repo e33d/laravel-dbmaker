@@ -119,7 +119,7 @@ class DBMakerConnection extends Connection
      */
     public function getDB_IDCap()
     {
-    	return $this->getConfig('options.dbidcap');
+    	return $this->getConfig('options.idcap');
     }
 
 }

@@ -40,6 +40,8 @@ class DBMakerBuilder extends Builder
     {
 
     	$this->DB_IDCap = $connection->getDB_IDCap();
+	if($this->DB_IDCap === null)
+		$this->DB_IDCap = 1;
     	return parent::__construct($connection, $grammar, $processor);
     }
     
@@ -93,8 +95,6 @@ class DBMakerBuilder extends Builder
     	
     }
     
-    
-
     /**
      * Chunk the results of a query by comparing numeric IDs.
      *
@@ -142,14 +142,12 @@ class DBMakerBuilder extends Builder
      */
     public function pluck($column, $key = null)
     {
-    	if($this->DB_IDCap === 0){
-    
-    	}else{
-    		if(!empty($column))
+    	if($this->DB_IDCap !== 0){
+		if(!empty($column))
     			$column = strtoupper($column);
     		if(!empty($key))
     			$key = strtoupper($key);
-    	}
+    	} 
 
     	$queryResult = $this->onceWithColumns(
     			is_null($key) ? [$column] : [$column, $key],
@@ -182,12 +180,8 @@ class DBMakerBuilder extends Builder
      */
     public function find($id, $columns = ['*'])
     {
-    	if($this->DB_IDCap === 0){
-    		$idName = 'id';
-    	}else{
-    		$idName = 'ID';
-    	}
-    	return $this->where($idName, '=', $id)->first($columns);
+    	 
+    	return $this->where('id', '=', $id)->first($columns);
     }
     
     /**

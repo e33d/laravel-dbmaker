@@ -1,6 +1,5 @@
 ## DBMaker integration for Laravel Framework
-This integration allows the use of <b>DBMaker</b> php function with Laravel framework instead of PDO.<br>
-It emulates PDO class used by Laravel.
+laravel-dbmaker is a DBMaker service provider for Laravel. It provides DBMaker Connection by extending the Illuminate Database component of the laravel framework.
 
 ### How to install
 > `composer require dbmaker/laravel-odbc` To add source in your project
@@ -14,7 +13,7 @@ We suggest using the libary we build
 2. According to your DBMaker version to choice bundle or standard 
 3. rename pdo_odbc.ini to 20-pdo_odbc.ini and move to /etc/php.d/
 4. copy pdo_odbc.so to /usr/lib64/php/modules/
-4. ```php -m``` Check if the installation was successful
+4. `php -m` Check if the installation was successful
 
 
 you can follow this step
@@ -27,7 +26,7 @@ you can follow this step
 ```
 
 
-Note: The DBMaker Laravel library treats the default installation directory of DBMaker standard version as ```/home/dbmaker/5.4```, bundle version treats as ```/opt/dbmaker```. If the installation directory is not above, please add installation directory to LD_LIBRARY_PATH.
+Note: If your default installation directory of DBMaker standard is not `/home/dbmaker/5.4` or bundle is not `/opt/dbmaker`, please add installation directory to LD_LIBRARY_PATH environment variable.
 
 
 ### Usage Instructions
@@ -43,7 +42,7 @@ It's very simple to configure:
     'username' => 'username',
     'password' => 'password',
     'options' => [
-            'dbidcap' => 1
+            'idcap' => 1   //please set the value same as your server db_idcap
     ]
 ]
 ```
@@ -99,6 +98,7 @@ run
 ```
 
 
-laravel DB Usage
+### Laravel DB Usage
 
 Consult the <a href="http://laravel.com/docs" rel="nofollow">Laravel framework documentation</a>
+

@@ -77,43 +77,43 @@ class DBMakerBuilder extends Builder
     public function getColumnListing($table)
     {
         $table = $this->connection->getTablePrefix().$table;
-        return $this->connection->select(
-	    			$this->grammar->compileGetAllColumns($table)
-	    	);
-    }
-    
-    /**
-     * Drop all tables from the database.
-     *
-     * @return void
-     */
-    public function dropAllTables()
-    {
-        $tables = [];
-        foreach ($this->getAllTables() as $row) {
-            $row = (array) $row;
-            $tables[] = reset($row);
-        }
-        if (empty($tables)) {
-            return;
-        }
-       foreach($tables as $key => $table){
+        return $this->connection->select ( $this->grammar->compileGetAllColumns ( $table ) );
+	}
+	
+	/**
+	 * Drop all tables from the database.
+	 *
+	 * @return void
+	 */
+	public function dropAllTables() {
+		$keyObj = $this->connection->select ( "select fk_tbl_name,fk_name from sysforeignkey ;" );
+		foreach ( $keyObj as $obj ) {
+			
+			$this->connection->statement ( 'ALTER TABLE "' . $obj->FK_TBL_NAME . '" DROP FOREIGN KEY "' . $obj->FK_NAME . '";' );
+		}
+		$tables = [ ];
+		foreach ( $this->getAllTables () as $row ) {
+			$row = ( array ) $row;
+			$tables [] = reset ( $row );
+		}
+		if (empty ( $tables )) {
+			return;
+		}
+		foreach($tables as $key => $table){
        			 $this->connection->statement(
    	        		 $this->grammar->compileDropAllTables($table)
         			);
           }
+          
     }
     /**
      * Compile the SQL needed to retrieve all table names.
      *
      * @return string
      */
-    public function getAllTables()
-    {
-    	return $this->connection->select(
-	    			$this->grammar->compileGetAllTables()
-	    );
-    }
+    public function getAllTables() {
+		return $this->connection->select ( $this->grammar->compileGetAllTables () );
+	}
     
     /**
      * Drop all views from the database.

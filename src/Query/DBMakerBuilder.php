@@ -195,7 +195,11 @@ class DBMakerBuilder extends Builder
      */
     public function insertGetId(array $values, $sequence = null)
     {
-    	$sql = $this->grammar->compileInsertGetId($this, $values, $sequence);
+    	if (! is_array(reset($values))) {
+    		$values = [$values];
+    	}
+ 
+    	$sql = $this->grammar->compileInsert($this, $values);
     
     	$values = $this->cleanBindings($values);
     

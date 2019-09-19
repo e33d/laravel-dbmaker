@@ -11,7 +11,7 @@ namespace DBMaker\ODBC\Schema;
 use Closure;
 use Illuminate\Database\Schema\Blueprint as Blueprint;
 use Illuminate\Database\Schema\Grammars\Grammar as Grammar;
-use DBMaker\ODBC\Schema\ColumnDefinition;
+
 
 class DBMakerBlueprint extends Blueprint
 {
@@ -23,17 +23,51 @@ class DBMakerBlueprint extends Blueprint
 	 */
 	public function increments($column)
 	{
-		return $this->serial($column)->nullable();;
+		return $this->serial($column, true);
 	}
 	
 	/**
-	 * Create a new integer (4-byte) column on the table.
+	 * Create a new auto-incrementing big integer (8-byte) column on the table.
 	 *
 	 * @param  string  $column
 	 * @return \Illuminate\Database\Schema\ColumnDefinition
 	 */
-	public function serial($column)
+	public function bigIncrements($column)
 	{
-		return $this->addColumn('serial', $column);
+		return $this->bigserial($column, true);
 	}
+	
+	 
+
+
+	/**
+	 * Create a new serial (4-byte) column on the table.
+	 *
+	 * @param  string  $column
+	 * @return \Illuminate\Database\Schema\ColumnDefinition
+	 */
+	public function serial($column, $autoIncrement = false)
+	{
+		return $this->addColumn('serial', $column, compact('autoIncrement'));
+	}
+	
+	
+ 
+
+
+	/**
+	 * Create a new bigserial (8-byte) column on the table.
+	 *
+	 * @param  string  $column
+	 * @return \Illuminate\Database\Schema\ColumnDefinition
+	 */
+	public function bigserial($column, $autoIncrement = false)
+	{
+		return $this->addColumn('bigserial', $column, compact('autoIncrement'));
+	}
+	
+	
+	
+	
+	
 }

@@ -28,7 +28,8 @@ class DBMakerConnector extends Connector implements ConnectorInterface
 	public function connect(array $config)
 	{
 		$options = $this->getOptions($config);
-		$dsn = array_get($config, 'dsn');
+		//$dsn = array_get($config, 'dsn');
+		$dsn = $this->getDsn($config);
 		$connection = $this->createConnection($dsn, $config, $options);
 		return $connection;
 	}
@@ -70,4 +71,19 @@ class DBMakerConnector extends Connector implements ConnectorInterface
 	{
 		return new DBMakerPdo($dsn, $username, $password, $options);
 	}
+	
+	/**
+	 * Create a DSN string from a configuration.
+	 *
+	 * @param  array   $config
+	 * @return string
+	 */
+	protected function getDsn(array $config)
+	{
+		extract($config, EXTR_SKIP);
+		return $config['dsn'];
+	}
+	
+	
+	
 }

@@ -35,9 +35,10 @@ class DBMakerProcessor extends Processor
      * @param Builder $query
      * @param null $sequence
      * @return mixed
-     */
+     
     public function getLastInsertId(Builder $query, $sequence = null){
         return $query->getConnection()->getPdo()->lastInsertId();
     }
+     */
 
 }
